@@ -1,0 +1,21 @@
+- table:
+    schema: public
+    name: names
+  insert_permissions:
+  - role: user
+    permission:
+      check: {}
+      columns:
+      - unique_name
+      backend_only: false
+  select_permissions:
+  - role: user
+    permission:
+      columns: []
+      filter: {}
+  update_permissions:
+  - role: user
+    permission:
+      columns: []
+      filter: {}
+      check: null
