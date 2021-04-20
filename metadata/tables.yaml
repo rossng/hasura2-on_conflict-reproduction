@@ -11,7 +11,11 @@
   select_permissions:
   - role: user
     permission:
-      columns: []
+      columns:
+      - id
+      - created_at
+      - updated_at
+      - unique_name
       filter: {}
   update_permissions:
   - role: user
